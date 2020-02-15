@@ -1,4 +1,4 @@
-package jvm01;
+package jvm.ByteCode;
 
 public class NormalClass {
 }
