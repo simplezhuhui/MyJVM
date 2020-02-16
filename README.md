@@ -42,6 +42,10 @@
     注意: *父加载器并不是继承关系，是在当前加载器内有一个ClassLoader类型的变量，叫parent,指向父加载器。
           *也不是加载当前加载器的加载器（加载器本身也是一个类，需要被加载）,ext/app加载器都是被启动类加载器加载的，调用getClassLoader返回null.
        
-      
+7.Launcher 
+     bootstrap/ext/app 这些加载器都是Launcher的静态内部类，在Launcher内定义了各自的访问范围。 
+
+8.自定义类加载器
+    8.1 调用加载器的loadClass()方法，会返回Class对象。
 
     
